@@ -1,0 +1,101 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+#carouselPink {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-inner {
+  height: 70vh;
+  width: 50vw;
+  transform: translate(50%, 15%);
+  //   border: 2px solid blue;
+
+  //   width: 100%;
+  //   display: flex !important;
+  //   justify-content: center !important;
+  //   align-items: center !important;
+}
+
+.carousel-item {
+  height: 100%;
+  //   border: 2px solid black;
+  //   width: 50%;
+  //   overflow: hidden;
+  //   transform: translateX(50%) !important;
+  //   transform: translateY(50%) !important;
+  //   float: none;
+  //   object-fit: cover;
+}
+
+.carousel-item img {
+  height: 80%;
+  //   width: 100%;
+  object-fit: contain;
+  //   border: 2px solid pink;
+
+  //   object-fit: cover;
+}
+
+.carousel-caption {
+  //   border: 2px solid purple;
+  position: static;
+}
+.carousel-indicators {
+  //   border: 2px solid red;
+  //   margin-top: -30px;
+  //   transform: translateY(-30px);
+  //   transform: translateY(0px);
+  //   overflow: scroll;
+  //   height: auto;
+  height: 16vh;
+  width: 100vw;
+  margin-right: 0;
+  margin-left: 0;
+  //   flex-wrap: nowrap;
+}
+
+.carousel-indicators button {
+  height: auto !important;
+  width: auto !important;
+  margin-left: 10px !important;
+  //   gap: 10px !important;
+}
+
+.carousel-indicators .active {
+  border: 5px solid #ff00c7;
+}
+
+/* .carousel-indicators [data-bs-target] {
+  border: 1px solid #ff00c7;
+} */
+
+button img {
+  width: 90px;
+  height: 12vh;
+  overflow: hidden;
+}
+
+button img:hover {
+  border: 2px solid #ff00c7;
+  opacity: 0.7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #ff00c7;
+  opacity: 0.2;
+  width: 5%;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: white;
+}
+/* l
+luego colocar las imagenes en los indicators:
+1. ver como es el selector para cuando esta activo y adicionarle el color del borde
+2. hacer que no este traslapados y que se muevan a la derecha
+final colocar el color a los botones next y prev 
+
+pendiente:
+los caption el la opcion md para que se muestren en todas las fotos*/
